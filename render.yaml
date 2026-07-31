@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: aladdin-child-analysis
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NOTION_API_KEY
+        sync: false
+      - key: ADMIN_KEY
+        sync: false
+      - key: NOTION_DATABASE_ID
+        value: c58f0dbe-be75-424b-9b0d-31b23a86496f
+      - key: WHATSAPP_NUMBER
+        value: "9647861111304"
